@@ -11186,6 +11186,10 @@ p {
   visibility: visible;
 }
 
+.service-card:hover .body .title {
+  visibility: hidden;
+}
+
 /*/ portfolio wrapper */
 .portfolio-card {
   display: block;
