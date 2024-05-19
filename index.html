@@ -55,7 +55,7 @@
             <p class="header-subtitle">Cursos y sitios web, informática, computación, programación y edición de fotos
             </p>
 
-            <a href="https://wa.me/34613315749/?text=Interesado%20en%20un%20curso." class="btn btn-primary mt-3 pricing-card-btn">Contáctame</a>
+            <a href="https://wa.me/34613315749/?text=Interesado%20en%20un%20curso." target="_blank" class="btn btn-primary mt-3 pricing-card-btn">Contáctame</a>
         </div>
     </header><!-- end of page header -->
 
@@ -79,7 +79,7 @@
                         Me gusta aplicar mis conocimientos para ayudar a las personas en crear el sitio web para su
                         negocio, así como enseñarles a hacerlo.
                     </p>
-                    <!--<a href="./assets/cv.pdf" download="CV_Javier_Martinez.pdf" class="btn btn-primary mt-3 pricing-card-btn">Descarga my CV</a>-->
+                    <!--<a href="./assets/cv.pdf" download="CV_Javier_Martinez.pdf" target="_blank" class="btn btn-primary mt-3 pricing-card-btn">Descarga my CV</a>-->
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -368,20 +368,20 @@
             <p class="section-subtitle">Como puedes comunicarte con migo?</p>
             <h6 class="section-title mb-5">Contáctame</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <div action="" class="contact-form col-md-10 col-lg-8 m-auto">
                 <div class="form-row">
                     <div class="form-group col-sm-12">
-                        <input type="email" class="form-control" placeholder="Correo electronico" requried>
+                        <input id="correo" type="email" class="form-control" placeholder="Correo electronico" requried>
                     </div>
                     <div class="form-group col-sm-12">
                         <textarea name="comment" id="comment" rows="6" class="form-control"
                             placeholder="Escribe algo"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Enviar mensaje" class="btn btn-outline-primary rounded">
+                        <button type="submit" onclick="contact();" class="btn btn-outline-primary rounded">Enviar mensaje</button>
                     </div>
                 </div>
-            </form><!-- end of contact form -->
+            </div><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
 
@@ -406,6 +406,7 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <script src="assets/js/contact.js"></script>
 
 </body>
 
